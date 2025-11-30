@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resumo do Curso</title>
+
+<!-- Renderizador de Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
+<!-- Mermaid -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: "default" });
+</script>
+
+<style>
+  body {
+    max-width: 900px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.5;
+  }
+  pre {
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  img {
+    border-radius: 8px;
+  }
+  hr {
+    margin: 40px 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>Carregando...</h1>
+
+<div id="content"></div>
+
+<script>
+async function loadMarkdown() {
+    const response = await fetch("README.md");
+    const mdText = await response.text();
+
+    const converter = new showdown.Converter({
+        tables: true,
+        strikethrough: true,
+        ghCompatibleHeaderId: true,
+        tasklists: true
+    });
+
+    let html = converter.makeHtml(mdText);
+
+    document.getElementById("content").innerHTML = html;
+}
+
+loadMarkdown();
+</script>
+
+</body>
+</html>
