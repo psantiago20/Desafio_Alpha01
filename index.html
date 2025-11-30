@@ -1,70 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Resumo do Curso — Alpha</title>
-
-<!-- Showdown: renderizador Markdown -->
-<script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
-
-<!-- Mermaid -->
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-
-<style>
-  body {
-    max-width: 900px;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    padding: 25px;
-    line-height: 1.6;
-  }
-  pre {
-    background: #f2f2f2;
-    padding: 12px;
-    border-radius: 5px;
-    overflow-x: auto;
-  }
-  img {
-    border-radius: 8px;
-  }
-  table {
-    margin: 20px 0;
-  }
-</style>
-</head>
-
-<body>
-
-<div id="content">Carregando...</div>
-
-<script>
-async function loadMarkdown() {
-    const response = await fetch("index.md");
-    let mdText = await response.text();
-
-    const converter = new showdown.Converter({
-        tables: true,
-        tasklists: true,
-        strikethrough: true,
-        simplifiedAutoLink: true,
-        ghCompatibleHeaderId: true
-    });
-
-    let html = converter.makeHtml(mdText);
-
-    // Insere o HTML convertido
-    document.getElementById("content").innerHTML = html;
-
-    // RENDERIZA MERMAID APÓS O MARKDOWN
-    setTimeout(() => {
-        mermaid.initialize({ startOnLoad: true, theme: "default" });
-        mermaid.init(undefined, document.querySelectorAll(".language-mermaid"));
-    }, 50);
-}
-
-loadMarkdown();
-</script>
-
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL='README.md'" />
+  </head>
+  <body>
+  </body>
 </html>
