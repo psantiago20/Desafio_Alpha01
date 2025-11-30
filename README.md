@@ -21,27 +21,25 @@
 
 # Professores
 
-<div>
-
 <table>
 <tr>
 
 <td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
-  <img src="kenji.jpeg" width="120"><br>
+  <img src="kenji.jpeg" width="120" alt="Kenji"><br>
   <b>Kenji Taniguchi</b><br>
   <a href="https://www.linkedin.com/in/kenjitaniguchi/">LinkedIn</a> · 
   <a href="https://github.com/">GitHub</a>
 </td>
 
 <td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
-  <img src="URL_FOTO_PROF2" width="120"><br>
+  <img src="URL_FOTO_PROF2" width="120" alt="Professor 2"><br>
   <b>Professor 2</b><br>
   <a href="https://linkedin.com">LinkedIn</a> · 
   <a href="https://instagram.com">Instagram</a>
 </td>
 
 <td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
-  <img src="URL_FOTO_PROF3" width="120"><br>
+  <img src="URL_FOTO_PROF3" width="120" alt="Professor 3"><br>
   <b>Professor 3</b><br>
   <a href="https://linkedin.com">LinkedIn</a> · 
   <a href="https://instagram.com">Instagram</a>
@@ -49,8 +47,6 @@
 
 </tr>
 </table>
-
-</div>
 
 ## Navegação
 - [Hard Skills](#hard-skills)
