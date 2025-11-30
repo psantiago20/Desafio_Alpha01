@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Resumo do Curso</title>
 
-<!-- Renderizador de Markdown -->
+<!-- Showdown: Renderizador de Markdown -->
 <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
 
 <!-- Mermaid -->
@@ -20,7 +20,7 @@
     margin: auto;
     font-family: Arial, sans-serif;
     padding: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
   pre {
     background: #f2f2f2;
@@ -28,35 +28,36 @@
     border-radius: 5px;
     overflow-x: auto;
   }
-  img {
-    border-radius: 8px;
-  }
-  hr {
-    margin: 40px 0;
-  }
 </style>
+
 </head>
 <body>
 
-<h1>Carregando...</h1>
-
-<div id="content"></div>
+<div id="content">Carregando conteúdo...</div>
 
 <script>
 async function loadMarkdown() {
-    const response = await fetch("README.md");
-    const mdText = await response.text();
+    try {
+        const response = await fetch("index.md");
+        const mdText = await response.text();
 
-    const converter = new showdown.Converter({
-        tables: true,
-        strikethrough: true,
-        ghCompatibleHeaderId: true,
-        tasklists: true
-    });
+        const converter = new showdown.Converter({
+            tables: true,
+            tasklists: true,
+            strikethrough: true,
+            simplifiedAutoLink: true,
+            ghCompatibleHeaderId: true
+        });
 
-    let html = converter.makeHtml(mdText);
+        const html = converter.makeHtml(mdText);
+        document.getElementById("content").innerHTML = html;
 
-    document.getElementById("content").innerHTML = html;
+        // Re-renderizar Mermaid
+        mermaid.contentLoaded();
+    } catch (error) {
+        document.getElementById("content").innerHTML =
+          "<p><strong>Erro ao carregar index.md</strong></p>";
+    }
 }
 
 loadMarkdown();
