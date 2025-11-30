@@ -23,27 +23,30 @@
   border-radius:15px;
   border:1px solid #ccc;
 ">
+# Professores
   <table>
-    <tr>
-      <td align="center">
-        <img src="kenji.jpeg" width="120" style="border-radius:50%"><br>
-        <b>Kenji Taniguchi</b><br>
-        <img src ="icone-linkedin-azul-png-5.png" width="15"> <a href="https://www.linkedin.com/in/kenjitaniguchi/">LinkedIn</a> <br>
-        <img src ="logotipo-do-github.png" width="15"> <a href="https://github.com/">GitHub</a>
-      </td>
-      <td align="center">
-        <img src="URL_FOTO_PROF2" width="120" style="border-radius:50%"><br>
-        <b>Professor 2</b><br>
-        <a href="https://linkedin.com">LinkedIn</a> • 
-        <a href="https://instagram.com">Instagram</a>
-      </td>
-      <td align="center">
-        <img src="URL_FOTO_PROF3" width="120" style="border-radius:50%"><br>
-        <b>Professor 3</b><br>
-        <a href="https://linkedin.com">LinkedIn</a> • 
-        <a href="https://instagram.com">Instagram</a>
-      </td>
-    </tr>
+  <tr>
+    <td align="center">
+      <img src="kenji.jpeg" width="120"><br>
+      <b>Kenji Taniguchi</b><br>
+      <a href="https://www.linkedin.com/in/kenjitaniguchi/">LinkedIn</a> · 
+      <a href="https://github.com/">GitHub</a>
+    </td>
+
+    <td align="center">
+      <img src="URL_FOTO_PROF2" width="120"><br>
+      <b>Professor 2</b><br>
+      <a href="https://linkedin.com">LinkedIn</a> · 
+      <a href="https://instagram.com">Instagram</a>
+    </td>
+
+    <td align="center">
+      <img src="URL_FOTO_PROF3" width="120"><br>
+      <b>Professor 3</b><br>
+      <a href="https://linkedin.com">LinkedIn</a> · 
+      <a href="https://instagram.com">Instagram</a>
+    </td>
+  </tr>
   </table>
 </div>
 
