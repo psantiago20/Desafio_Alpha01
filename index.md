@@ -1,9 +1,3 @@
-<!-- Suporte ao Mermaid no GitHub Pages -->
-<script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
 # Resumo do Curso — Hard Skills & Soft Skills (SEMANAS 1 - 3)
 
 ## 
@@ -87,8 +81,6 @@
      /     |     \\
   PC1    PC2    PC3
 ```
-
-Backbones → **malha (mesh)** por redundância.
 
 ---
 
@@ -244,8 +236,6 @@ Versão B
 - `main` = local  
 - `origin/main` = GitHub  
 
-Quando diferentes → divergência.
-
 ---
 
 ### Histórico Git (Mermaid)
@@ -304,11 +294,6 @@ Modelo:
 <div style="zoom:75%">
 
 ```mermaid
-%%{init: {"theme": "default", "themeVariables": {
-    "pie1": "#00BCD4",
-    "pie2": "#8BC34A",
-    "pie3": "#FF9800"
-}}}%%
 pie title Domínio Geral
   "Redes" : 33
   "Git" : 33
