@@ -1,5 +1,6 @@
 # Resumo do Curso — Hard Skills & Soft Skills (SEMANAS 1 - 3)
- <table>
+
+<table>
   <tr>
     <td>
       <a href="https://www.alphaedtech.org.br/">
@@ -17,7 +18,10 @@
 ![Trilhas](https://img.shields.io/badge/Trilhas-Hard%20%2F%20Soft-orange)
 
 ---
+
 # Professores
+
+<div>
 
 <table>
 <tr>
@@ -45,6 +49,8 @@
 
 </tr>
 </table>
+
+</div>
 
 ## Navegação
 - [Hard Skills](#hard-skills)
@@ -256,9 +262,9 @@ gitGraph
 <summary> Comunicação e Escuta Ativa</summary>
 
 ### Linguagem Corporal
-- Postura
-- Olhar
-- Gestos
+- Postura  
+- Olhar  
+- Gestos  
 
 ---
 
@@ -267,15 +273,15 @@ gitGraph
 > "Ouvir é biológico. Escutar é intencional."
 
 Checklist:
-- [x] Não interromper
-- [x] Confirmar entendimento
-- [x] Observar sinais
-- [x] Fazer perguntas
+- [x] Não interromper  
+- [x] Confirmar entendimento  
+- [x] Observar sinais  
+- [x] Fazer perguntas  
 
 ---
 
-### Feedback
-Modelo:
+### Feedback  
+Modelo:  
 **Situação → Comportamento → Impacto**
 
 > "Na reunião, quando você interrompeu, eu perdi o raciocínio."
@@ -299,4 +305,5 @@ pie title Domínio Geral
   "Git" : 33
   "Soft Skills" : 33
 ```
+
 </div>
