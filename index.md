@@ -1,4 +1,4 @@
-# 📘 Resumo do Curso — Hard & Soft Skills
+# Resumo do Curso — Hard & Soft Skills
 ![Progresso](https://img.shields.io/badge/Progresso-3%20Módulos-blue)
 ![Markdown](https://img.shields.io/badge/Markdown-Avançado-green)
 ![Trilhas](https://img.shields.io/badge/Trilhas-Hard%20%2F%20Soft-orange)
@@ -7,9 +7,9 @@
 
 # Professores
 
-| ![Kenji](kenji.jpeg){width=120} | ![Prof2](URL_FOTO_PROF2){width=120} | ![Prof3](URL_FOTO_PROF3){width=120} |
+| ![Kenji](kenji.jpeg) | ![Prof2](URL_FOTO_PROF2) | ![Prof3](URL_FOTO_PROF3) |
 |---|---|---|
-| **Kenji Taniguchi**  <br> [LinkedIn](https://www.linkedin.com/in/kenjitaniguchi/) · [GitHub](https://github.com/) | **Professor 2**  <br> [LinkedIn](https://linkedin.com) · [Instagram](https://instagram.com) | **Professor 3**  <br> [LinkedIn](https://linkedin.com) · [Instagram](https://instagram.com) |
+| **Kenji Taniguchi**  <br> [LinkedIn](https://www.linkedin.com/in/kenjitaniguchi/) · [GitHub](https://github.com/) | **Professor 2** <br> [LinkedIn](https://linkedin.com) · [Instagram](https://instagram.com) | **Professor 3** <br> [LinkedIn](https://linkedin.com) · [Instagram](https://instagram.com) |
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 1) Redes de Computadores
 <details>
-<summary><strong>Clique para abrir</strong></summary>
+<summary><strong>➤ Clique para abrir</strong></summary>
 
 ### Tipos de Redes
 | Tipo | Alcance | Exemplos |
@@ -41,9 +41,9 @@
   PC1    PC2    PC3
 ```
 
-### Protocolo HTTP/HTTPS
+### HTTP x HTTPS
 - **HTTP** → texto puro  
-- **HTTPS** → HTTP + TLS (criptografia + integridade)
+- **HTTPS** → HTTP + TLS  
 
 ### Fluxo da Web (Mermaid)
 ```mermaid
@@ -61,7 +61,7 @@ sequenceDiagram
 
 ## 2) Protocolos, IP, DNS e Arquitetura
 <details>
-<summary><strong>Clique para abrir</strong></summary>
+<summary><strong>➤ Clique para abrir</strong></summary>
 
 ### TCP x UDP
 | Protocolo | Confiável | Rápido | Uso |
@@ -76,7 +76,7 @@ sequenceDiagram
 - TXT  
 - PTR  
 
-### Mindmap (Mermaid)
+### Mapa Mental (Mermaid)
 ```mermaid
 mindmap
   root((Redes))
@@ -99,7 +99,7 @@ mindmap
 
 ## 3) Git e Versionamento
 <details>
-<summary><strong>Clique para abrir</strong></summary>
+<summary><strong>➤ Clique para abrir</strong></summary>
 
 ### Conceitos Básicos
 | Conceito | Definição |
@@ -136,7 +136,7 @@ gitGraph
 
 # Soft Skills
 <details>
-<summary><strong>Clique para abrir</strong></summary>
+<summary><strong>➤ Clique para abrir</strong></summary>
 
 ### Linguagem Corporal
 - Postura  
@@ -153,8 +153,7 @@ Checklist:
 - [x] Fazer perguntas  
 
 ### Feedback
-Modelo SCI:  
-**Situação → Comportamento → Impacto**
+Modelo SCI: **Situação → Comportamento → Impacto**
 
 </details>
 
@@ -170,3 +169,5 @@ pie title Domínio Geral
 ```
 
 ---
+
+# Fim do Documento

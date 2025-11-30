@@ -3,23 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Resumo do Curso</title>
+<title>Resumo do Curso — Alpha</title>
 
-<!-- Showdown: Renderizador de Markdown -->
+<!-- Showdown: renderizador Markdown -->
 <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
 
 <!-- Mermaid -->
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  mermaid.initialize({ startOnLoad: true, theme: "default" });
-</script>
 
 <style>
   body {
     max-width: 900px;
     margin: auto;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 25px;
     line-height: 1.6;
   }
   pre {
@@ -28,36 +25,42 @@
     border-radius: 5px;
     overflow-x: auto;
   }
+  img {
+    border-radius: 8px;
+  }
+  table {
+    margin: 20px 0;
+  }
 </style>
-
 </head>
+
 <body>
 
-<div id="content">Carregando conteúdo...</div>
+<div id="content">Carregando...</div>
 
 <script>
 async function loadMarkdown() {
-    try {
-        const response = await fetch("index.md");
-        const mdText = await response.text();
+    const response = await fetch("index.md");
+    let mdText = await response.text();
 
-        const converter = new showdown.Converter({
-            tables: true,
-            tasklists: true,
-            strikethrough: true,
-            simplifiedAutoLink: true,
-            ghCompatibleHeaderId: true
-        });
+    const converter = new showdown.Converter({
+        tables: true,
+        tasklists: true,
+        strikethrough: true,
+        simplifiedAutoLink: true,
+        ghCompatibleHeaderId: true
+    });
 
-        const html = converter.makeHtml(mdText);
-        document.getElementById("content").innerHTML = html;
+    let html = converter.makeHtml(mdText);
 
-        // Re-renderizar Mermaid
-        mermaid.contentLoaded();
-    } catch (error) {
-        document.getElementById("content").innerHTML =
-          "<p><strong>Erro ao carregar index.md</strong></p>";
-    }
+    // Insere o HTML convertido
+    document.getElementById("content").innerHTML = html;
+
+    // RENDERIZA MERMAID APÓS O MARKDOWN
+    setTimeout(() => {
+        mermaid.initialize({ startOnLoad: true, theme: "default" });
+        mermaid.init(undefined, document.querySelectorAll(".language-mermaid"));
+    }, 50);
 }
 
 loadMarkdown();
