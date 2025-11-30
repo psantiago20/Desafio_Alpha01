@@ -1,18 +1,7 @@
 # Resumo do Curso — Hard Skills & Soft Skills (SEMANAS 1 - 3)
 
-## 
-<table>
-  <tr>
-    <td>
-      <a href="https://www.alphaedtech.org.br/">
-        <img src="alpha.png" width="30">
-      </a>
-    </td>
-    <td>
-      <h2 style="display:inline;">PLATAFORMA ALPHA EDTECH</h2>
-    </td>
-  </tr>
-</table>
+## Plataforma Alpha EdTech
+[![Alpha](alpha.png)](https://www.alphaedtech.org.br/)
 
 ![Progresso](https://img.shields.io/badge/Progresso-3%20Módulos-blue)
 ![Markdown](https://img.shields.io/badge/Markdown-Avançado-green)
@@ -20,38 +9,36 @@
 
 ---
 
-<div style="background:#f2f2f2; padding:20px; border-radius:15px; border:1px solid #ccc;">
+# 👨‍🏫 Professores
 
-  <table>
-    <tr>
-      <td align="center">
-        <img src="kenji.jpeg" width="120" style="border-radius:50%"><br>
-        <b>Kenji Taniguchi</b><br>
-        <img src="icone-linkedin-azul-png-5.png" width="15"> 
-        <a href="https://www.linkedin.com/in/kenjitaniguchi/">LinkedIn</a> <br>
-        <img src="logotipo-do-github.png" width="15"> 
-        <a href="https://github.com/">GitHub</a>
-      </td>
+### 🟦 Kenji Taniguchi
+![Kenji](kenji.jpeg){width=120}
 
-      <td align="center">
-        <img src="URL_FOTO_PROF2" width="120" style="border-radius:50%"><br>
-        <b>Professor 2</b><br>
-        <a href="https://linkedin.com">LinkedIn</a> • 
-        <a href="https://instagram.com">Instagram</a>
-      </td>
+**Redes sociais:**
+- ![LinkedIn](icone-linkedin-azul-png-5.png){width=15} [LinkedIn](https://www.linkedin.com/in/kenjitaniguchi/)
+- ![GitHub](logotipo-do-github.png){width=15} [GitHub](https://github.com/)
 
-      <td align="center">
-        <img src="URL_FOTO_PROF3" width="120" style="border-radius:50%"><br>
-        <b>Professor 3</b><br>
-        <a href="https://linkedin.com">LinkedIn</a> • 
-        <a href="https://instagram.com">Instagram</a>
-      </td>
-    </tr>
-  </table>
+---
 
-</div>
+### 🟩 Professor 2
+![Prof2](URL_FOTO_PROF2){width=120}
 
-## Navegação
+**Redes sociais:**
+- [LinkedIn](https://linkedin.com)
+- [Instagram](https://instagram.com)
+
+---
+
+### 🟧 Professor 3
+![Prof3](URL_FOTO_PROF3){width=120}
+
+**Redes sociais:**
+- [LinkedIn](https://linkedin.com)
+- [Instagram](https://instagram.com)
+
+---
+
+# 📌 Navegação
 - [Hard Skills](#hard-skills)
 - [Soft Skills](#soft-skills)
 
@@ -60,7 +47,7 @@
 # Hard Skills
 
 <details>
-<summary> Módulo 1 — Redes de Computadores</summary>
+<summary><strong>Módulo 1 — Redes de Computadores</strong></summary>
 
 ### Tipos de Redes
 
@@ -76,9 +63,8 @@
 ### Topologias de Rede
 
 ```
-(ASCII)
         [Switch]
-     /     |     \\
+     /     |     \
   PC1    PC2    PC3
 ```
 
@@ -86,7 +72,7 @@
 
 ### Protocolo da Web
 - HTTP = texto puro  
-- HTTPS = HTTP + TLS (criptografia + integridade)
+- HTTPS = HTTP + TLS
 
 ---
 
@@ -129,7 +115,7 @@ sequenceDiagram
 ---
 
 <details>
-<summary> Módulo 2 — Protocolos, IP, DNS e Arquitetura</summary>
+<summary><strong>Módulo 2 — Protocolos, IP, DNS e Arquitetura</strong></summary>
 
 ### TCP x UDP
 
@@ -194,7 +180,7 @@ mindmap
 ---
 
 <details>
-<summary> Módulo 3 — Git e Versionamento</summary>
+<summary><strong>Módulo 3 — Git e Versionamento</strong></summary>
 
 ### Conceitos do Git
 
@@ -258,7 +244,7 @@ gitGraph
 # Soft Skills
 
 <details>
-<summary> Comunicação e Escuta Ativa</summary>
+<summary><strong>Comunicação e Escuta Ativa</strong></summary>
 
 ### Linguagem Corporal
 - Postura  
@@ -283,15 +269,11 @@ Checklist:
 Modelo:  
 **Situação → Comportamento → Impacto**
 
-> "Na reunião, quando você interrompeu, eu perdi o raciocínio."
-
 </details>
 
 ---
 
-# Estatísticas Gerais
-
-<div style="zoom:75%">
+# 📊 Estatísticas Gerais
 
 ```mermaid
 pie title Domínio Geral
@@ -299,5 +281,3 @@ pie title Domínio Geral
   "Git" : 33
   "Soft Skills" : 33
 ```
-
-</div>
