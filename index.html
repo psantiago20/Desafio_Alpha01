@@ -1,8 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; URL='README.md'" />
-  </head>
-  <body>
-  </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo do Curso</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.js';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
+    <style>
+        /* Opcional: Estilos básicos para o corpo da página */
+        body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div id="markdown-container">Carregando conteúdo...</div>
+
+    <script>
+        // Função para carregar o README.md e converter para HTML
+        fetch('README.md')
+            .then(response => response.text())
+            .then(text => {
+                // Configura a conversão de Markdown para HTML
+                var converter = new showdown.Converter({ 
+                    tables: true, 
+                    simplifiedAutoLink: true,
+                    strikethrough: true
+                });
+                var html = converter.makeHtml(text);
+                
+                // Insere o HTML convertido no container
+                document.getElementById('markdown-container').innerHTML = html;
+                
+                // Processa os blocos de código Mermaid após a conversão
+                // Note: Esta etapa já é coberta pelo mermaid.initialize acima.
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o README.md:', error);
+                document.getElementById('markdown-container').innerHTML = 'Falha ao carregar o README.';
+            });
+    </script>
+</body>
 </html>
