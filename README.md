@@ -25,24 +25,39 @@
 <tr>
 
 <td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
-  <img src="kenji.jpeg" width="120" alt="Kenji"><br>
+  <span style="display: block; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+    <img src="kenji.jpeg" width="120" style="border-radius: 50%;" alt="Kenji"><br><br>
+  </span>
   <b>Kenji Taniguchi</b><br>
-  <a href="https://www.linkedin.com/in/kenjitaniguchi/">LinkedIn</a> · 
-  <a href="https://github.com/">GitHub</a>
+  <a href="https://www.linkedin.com/in/kenjitaniguchi/"><img src="icone-linkedin-azul-png-5.png" width="10">Linkedin</a> · 
+  <a href="https://http.cat/status/500"><img src="logotipo-do-github.png" width="10">GitHub</a>
 </td>
 
 <td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
-  <img src="URL_FOTO_PROF2" width="120" alt="Professor 2"><br>
-  <b>Professor 2</b><br>
-  <a href="https://linkedin.com">LinkedIn</a> · 
-  <a href="https://instagram.com">Instagram</a>
+  <span style="display: block; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+    <img src="empatia.png" width="120" style="border-radius: 50%;" alt="Flavia"><br><br>
+  </span>
+  <b>Flavia Caçapava Lorenzi</b><br>
+  <a href="https://http.cat/status/418"><img src="icone-linkedin-azul-png-5.png" width="10">Linkedin</a> · 
+  <a href="https://http.cat/status/506"><img src="logotipo-do-github.png" width="10">GitHub</a>
 </td>
 
 <td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
-  <img src="URL_FOTO_PROF3" width="120" alt="Professor 3"><br>
-  <b>Professor 3</b><br>
-  <a href="https://linkedin.com">LinkedIn</a> · 
-  <a href="https://instagram.com">Instagram</a>
+  <span style="display: block; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+    <img src="ozias.jpeg" width="120" style="border-radius: 50%;" alt="Ozias"><br><br>
+  </span>
+  <b>Felipe Ozias</b><br>
+  <a href="https://www.linkedin.com/in/felipe-ozias/"><img src="icone-linkedin-azul-png-5.png" width="10">Linkedin</a> · 
+  <a href="https://http.cat/status/501"><img src="logotipo-do-github.png" width="10">GitHub</a>
+</td>
+
+<td align="center" style="padding:20px; border:1px solid #ccc; border-radius:15px; background:#f2f2f2;">
+  <span style="display: block; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+    <img src="mori.png" width="120" style="border-radius: 50%;" alt="Bebam água"><br><br>
+  </span>
+  <b>Mori (mentor)</b><br>
+  <a href="https://http.cat/status/510"><img src="icone-linkedin-azul-png-5.png" width="10">Linkedin</a> · 
+  <a href="https://http.cat/status/417"><img src="logotipo-do-github.png" width="10">GitHub</a>
 </td>
 
 </tr>
