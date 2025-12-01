@@ -1,4 +1,4 @@
-# Resumo do Curso — Hard Skills & Soft Skills (SEMANAS 1 - 3)
+# Resumo do Curso — Hard Skills & Soft Skills
 
 <table>
   <tr>
