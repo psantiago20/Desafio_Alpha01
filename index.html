@@ -1,45 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Resumo do Curso</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.js';
-        mermaid.initialize({ startOnLoad: true });
-    </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- GitHub Flavored Markdown CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css">
+    
+    <!-- Mermaid para diagramas -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    
+    <!-- Fix para imagens no GitHub Pages -->
     <style>
-        /* Opcional: Estilos básicos para o corpo da página */
-        body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; }
+        .markdown-body {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        
+        /* CORREÇÃO DAS IMAGENS - PROBLEMA PRINCIPAL */
+        .markdown-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Respeita o width das imagens no Markdown */
+        .markdown-body img[width="30"],
+        .markdown-body img[width="120"] {
+            width: 30px !important;
+            height: auto !important;
+        }
+        
+        /* Cards dos professores */
+        .markdown-body table td {
+            vertical-align: top;
+        }
+        
+        /* Mermaid */
+        .markdown-body .mermaid {
+            text-align: center;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .markdown-body {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
-<body>
-    <div id="markdown-container">Carregando conteúdo...</div>
-
-    <script>
-        // Função para carregar o README.md e converter para HTML
-        fetch('README.md')
-            .then(response => response.text())
-            .then(text => {
-                // Configura a conversão de Markdown para HTML
-                var converter = new showdown.Converter({ 
-                    tables: true, 
-                    simplifiedAutoLink: true,
-                    strikethrough: true
-                });
-                var html = converter.makeHtml(text);
-                
-                // Insere o HTML convertido no container
-                document.getElementById('markdown-container').innerHTML = html;
-                
-                // Processa os blocos de código Mermaid após a conversão
-                // Note: Esta etapa já é coberta pelo mermaid.initialize acima.
-            })
-            .catch(error => {
-                console.error('Erro ao carregar o README.md:', error);
-                document.getElementById('markdown-container').innerHTML = 'Falha ao carregar o README.';
-            });
-    </script>
+<body class="markdown-body">
+    <!-- CARREGA O README.MD AQUI -->
+    <div id="content"></div>
 </body>
+
+<script>
+// Carrega o README.md e renderiza como Markdown
+fetch('README.md')
+    .then(response => response.text())
+    .then(markdown => {
+        // Converte Markdown para HTML usando marked.js
+        const html = marked.parse(markdown);
+        document.getElementById('content').innerHTML = html;
+        
+        // Inicializa Mermaid APÓS renderizar
+        mermaid.initialize({ startOnLoad: true });
+        mermaid.run();
+    });
+
+// Carrega marked.js para conversão Markdown -> HTML
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/marked@12.0.1/lib/marked.umd.js';
+script.onload = () => {
+    // marked já está disponível globalmente
+};
+document.head.appendChild(script);
+</script>
 </html>
