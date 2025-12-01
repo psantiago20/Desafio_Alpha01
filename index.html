@@ -3,316 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hard Skills & Soft Skills - Alpha EdTech</title>
-    
-    <!-- GitHub Markdown CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css">
-    
-    <!-- Mermaid CSS/JS -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
-    
+    <title>Resumo do Curso</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
     <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #24292e;
-        }
-        
         body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-            color: var(--text-color);
-            background: var(--bg-color);
-        }
-        
-        .markdown-body {
-            max-width: 980px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
-            box-sizing: border-box;
+            padding: 20px;
+            color: #333;
         }
         
-        /* ✅ CORREÇÃO DAS IMAGENS - PROBLEMA PRINCIPAL */
-        .markdown-body img {
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        table td, table th {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table th {
+            background-color: #f2f2f2;
+        }
+        
+        img {
             max-width: 100%;
             height: auto;
-            display: block;
-            margin: 0 auto;
         }
         
-        /* Logo pequeno (30px) */
-        .markdown-body img[src="alpha.png"] {
-            width: 30px !important;
-            height: 30px !important;
-            vertical-align: middle;
-        }
-        
-        /* Fotos dos professores (120px) */
-        .markdown-body img[src="kenji.jpeg"],
-        .markdown-body img[src*="prof"] {
-            width: 120px !important;
-            height: 120px !important;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        
-        /* Tabela dos professores */
-        .professores-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 15px;
-        }
-        
-        .professores-table td {
-            padding: 20px;
-            border: 1px solid #d0d7de;
-            border-radius: 15px;
-            background: #f6f8fa;
-            text-align: center;
-            vertical-align: top;
-            width: 33%;
-        }
-        
-        @media (max-width: 768px) {
-            .professores-table td {
-                width: 100%;
-                display: block;
-                margin-bottom: 15px;
-            }
-        }
-        
-        /* Badges */
-        .shields {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        
-        /* Detalhes */
         details {
-            margin: 20px 0;
-            border: 1px solid #d0d7de;
-            border-radius: 6px;
-            overflow: hidden;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
         }
         
         summary {
-            padding: 15px;
-            background: #f6f8fa;
-            font-weight: 600;
-            font-size: 16px;
             cursor: pointer;
-            list-style: none;
-        }
-        
-        summary::-webkit-details-marker {
-            display: none;
-        }
-        
-        details[open] summary {
-            background: #e1e4e8;
-        }
-        
-        details > div {
-            padding: 20px;
-            background: white;
-        }
-        
-        /* Tabelas */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            border: 1px solid #d0d7de;
-        }
-        
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #d0d7de;
-        }
-        
-        th {
-            background: #f6f8fa;
-            font-weight: 600;
-        }
-        
-        /* Código */
-        pre {
-            background: #f6f8fa !important;
-            padding: 16px !important;
-            border-radius: 6px !important;
-            overflow-x: auto;
-            border: 1px solid #d0d7de;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #007bff;
+            padding: 10px;
         }
         
         code {
-            background: #f6f8fa;
+            background: #f4f4f4;
             padding: 2px 6px;
             border-radius: 3px;
-            font-size: 90%;
         }
         
-        /* Header */
-        .header-table {
-            width: 100%;
-            margin-bottom: 30px;
-            border: none;
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
         }
         
-        .header-table td:first-child {
-            width: 50px;
-            padding-right: 15px;
+        pre code {
+            background: none;
+            padding: 0;
         }
         
-        .header-table td:last-child {
-            padding-left: 15px;
+        blockquote {
+            border-left: 4px solid #007bff;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #555;
         }
         
-        /* Mermaid */
         .mermaid {
             text-align: center;
             margin: 20px 0;
         }
+        
+        #loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+            color: #666;
+        }
     </style>
 </head>
-<body class="markdown-body">
-    <!-- SEU CONTEÚDO DO README.MD AQUI (HTML CONVERTIDO) -->
+<body>
+    <div id="loading">Carregando README.md...</div>
+    <div id="content"></div>
     
-    <!-- HEADER -->
-    <table class="header-table">
-        <tr>
-            <td>
-                <a href="https://www.alphaedtech.org.br/">
-                    <img src="alpha.png" alt="Alpha EdTech">
-                </a>
-            </td>
-            <td>
-                <h1>PLATAFORMA ALPHA EDTECH</h1>
-            </td>
-        </tr>
-    </table>
-
-    <div class="shields">
-        <img src="https://img.shields.io/badge/Progresso-3%20Módulos-blue" alt="Progresso">
-        <img src="https://img.shields.io/badge/Markdown-Avan%C3%A7ado-green" alt="Markdown">
-        <img src="https://img.shields.io/badge/Trilhas-Hard%20%2F%20Soft-orange" alt="Trilhas">
-    </div>
-
-    <hr>
-
-    <!-- PROFESSORES -->
-    <h2>Professores</h2>
-    
-    <table class="professores-table">
-        <tr>
-            <td>
-                <img src="kenji.jpeg" alt="Kenji Taniguchi">
-                <br><strong>Kenji Taniguchi</strong><br>
-                <a href="https://www.linkedin.com/in/kenjitaniguchi/">LinkedIn</a> · 
-                <a href="https://github.com/">GitHub</a>
-            </td>
-            <td>
-                <img src="foto_prof2.jpg" alt="Professor 2">
-                <br><strong>Professor 2</strong><br>
-                <a href="https://linkedin.com">LinkedIn</a> · 
-                <a href="https://instagram.com">Instagram</a>
-            </td>
-            <td>
-                <img src="foto_prof3.jpg" alt="Professor 3">
-                <br><strong>Professor 3</strong><br>
-                <a href="https://linkedin.com">LinkedIn</a> · 
-                <a href="https://instagram.com">Instagram</a>
-            </td>
-        </tr>
-    </table>
-
-    <h2>Navegação</h2>
-    <ul>
-        <li><a href="#hard-skills">Hard Skills</a></li>
-        <li><a href="#soft-skills">Soft Skills</a></li>
-    </ul>
-
-    <hr>
-
-    <!-- HARD SKILLS -->
-    <h2 id="hard-skills">Hard Skills</h2>
-
-    <details>
-        <summary>Módulo 1 — Redes de Computadores</summary>
-        <div>
-            <h3>Tipos de Redes</h3>
-            <table>
-                <tr><th>Tipo</th><th>Alcance</th><th>Exemplos</th></tr>
-                <tr><td>LAN</td><td>Local</td><td>Casa, empresa</td></tr>
-                <tr><td>WAN</td><td>Amplo</td><td>Internet</td></tr>
-                <tr><td>MAN</td><td>Cidade</td><td>Provedores</td></tr>
-                <tr><td>PAN</td><td>Pessoal</td><td>Bluetooth</td></tr>
-            </table>
-
-            <h3>Protocolo da Web</h3>
-            <ul>
-                <li><strong>HTTP</strong> = texto puro</li>
-                <li><strong>HTTPS</strong> = HTTP + TLS (criptografia + integridade)</li>
-            </ul>
-
-            <h3>AJAX</h3>
-            <pre><code>fetch("/api/data")
-  .then(r => r.json())
-  .then(console.log);</code></pre>
-
-            <h3>Fluxo da Web</h3>
-            <div class="mermaid">
-                sequenceDiagram
-                    User->>Browser: Acessa site
-                    Browser->>DNS: Resolve domínio
-                    DNS->>Browser: Devolve IP
-                    Browser->>Servidor: Requisição HTTP/HTTPS
-                    Servidor->>Browser: Resposta
-            </div>
-        </div>
-    </details>
-
-    <!-- Adicione outros módulos aqui seguindo o mesmo padrão -->
-
-    <h2 id="soft-skills">Soft Skills</h2>
-
-    <details>
-        <summary>Comunicação e Escuta Ativa</summary>
-        <div>
-            <blockquote>"Ouvir é biológico. Escutar é intencional."</blockquote>
-            
-            <h3>Checklist Escuta Ativa</h3>
-            <ul>
-                <li><strong>Não interromper</strong></li>
-                <li><strong>Confirmar entendimento</strong></li>
-                <li><strong>Observar sinais</strong></li>
-                <li><strong>Fazer perguntas</strong></li>
-            </ul>
-
-            <h3>Feedback</h3>
-            <p><strong>Situação → Comportamento → Impacto</strong></p>
-            <blockquote>"Na reunião, quando você interrompeu, eu perdi o raciocínio."</blockquote>
-        </div>
-    </details>
-
-    <!-- ESTATÍSTICAS -->
-    <h2>Estatísticas Gerais</h2>
-    <div class="mermaid">
-        pie title Domínio Geral
-            "Redes" : 33
-            "Git" : 33
-            "Soft Skills" : 33
-    </div>
-
     <script>
-        // Inicializa Mermaid
-        mermaid.initialize({
-            startOnLoad: true,
-            theme: 'default'
-        });
+        // Configurar Mermaid
+        mermaid.initialize({ startOnLoad: false });
+        
+        // Buscar e processar README.md
+        fetch('README.md')
+            .then(response => {
+                if (!response.ok) throw new Error('README.md não encontrado');
+                return response.text();
+            })
+            .then(markdown => {
+                // Remover loading
+                document.getElementById('loading').style.display = 'none';
+                
+                // Converter Markdown para HTML
+                const html = marked.parse(markdown);
+                document.getElementById('content').innerHTML = html;
+                
+                // Processar diagramas Mermaid
+                const mermaidBlocks = document.querySelectorAll('code.language-mermaid');
+                mermaidBlocks.forEach((block, index) => {
+                    const mermaidCode = block.textContent;
+                    const div = document.createElement('div');
+                    div.className = 'mermaid';
+                    div.textContent = mermaidCode;
+                    block.parentElement.replaceWith(div);
+                });
+                
+                // Renderizar Mermaid
+                mermaid.run();
+            })
+            .catch(error => {
+                document.getElementById('loading').innerHTML = 
+                    `<p style="color: red;">Erro: ${error.message}</p>
+                     <p>Certifique-se de que o arquivo README.md está na raiz do repositório.</p>`;
+            });
     </script>
 </body>
 </html>
